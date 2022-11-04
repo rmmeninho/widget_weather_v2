@@ -1,0 +1,58 @@
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 25vh;
+}
+
+.temperature_container{
+  width: 30vh;
+  height: 30vh;
+  background-color: chocolate;
+  border: solid 5 px black;
+  text-align: center;
+}
+
+#temperature{
+  font-size: 16vh;
+  margin-top: 20%;
+}
+
+.image_container{
+  width: 30vh;
+  height: 30vh;
+  background-color: gold;
+  border: solid 5 px black;
+}
+
+#city{
+  float: right;
+  font-size: 2.5vh;
+  margin-right: 10%;
+}
+
+.date_container{
+  width: 30vh;
+  height: 30vh;
+  background-color: cyan;
+  border: solid 5 px black;
+  line-height: 15%;
+  text-align: center;
+}
+
+#day{
+  margin-top: 30%;
+  font-size: 6vh;
+}
+
+#date{
+  font-size: 2.5vh;
+}
+
+#hour{
+  margin-top: 20%;
+  font-size: 5vh;
+}
+

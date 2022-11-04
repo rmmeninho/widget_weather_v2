@@ -1,0 +1,16 @@
+<p>weather works!</p>
+
+<div class="container">
+  <div class="temperature_container">
+    <p id="temperature">{{this.temperature}}&#176;</p>
+  </div>
+  <div class="image_container">
+    <p id="city">{{this.city}}</p>
+    <img src="" alt="" id="weather_image">
+  </div>
+  <div class="date_container">
+    <p id="day">{{this.today | date:'EEEE'}}</p>
+    <p id="date">{{this.today | date:'MMM d, y'}}</p>
+    <p id="hour">{{this.today | date:'HH:mm'}}</p>
+  </div>
+</div>
