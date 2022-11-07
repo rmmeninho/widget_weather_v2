@@ -10,41 +10,55 @@
 .temperature_container{
   width: 30vh;
   height: 30vh;
-  background-color: chocolate;
-  border: solid 5 px black;
+  background-color: rgb(206, 229, 236);
   text-align: center;
+  position: relative;
+}
+
+#city{
+  font-size: 2.5vh;
+  margin-left: 5%;
+  margin-top: 85%;
+  position: absolute;
 }
 
 #temperature{
-  font-size: 16vh;
+  font-size: 10vh;
   margin-top: 20%;
 }
 
 .image_container{
+  position: relative;
   width: 30vh;
   height: 30vh;
-  background-color: gold;
-  border: solid 5 px black;
+  background-color: rgb(206, 229, 236);
 }
 
-#city{
-  float: right;
+#description_weather{
   font-size: 2.5vh;
-  margin-right: 10%;
+  position: absolute;
+  margin-top: 85%;
+  margin-left: 20%;
+}
+
+img{
+  width: 30vh;
+  height: 30vh;
 }
 
 .date_container{
   width: 30vh;
   height: 30vh;
-  background-color: cyan;
-  border: solid 5 px black;
+  background-color: rgb(206, 229, 236);
   line-height: 15%;
   text-align: center;
+  word-break:break-all;
 }
 
 #day{
-  margin-top: 30%;
-  font-size: 6vh;
+  margin-top: 25%;
+  font-size: 4vh;
+  margin-bottom: 20%;
 }
 
 #date{
@@ -52,7 +66,7 @@
 }
 
 #hour{
-  margin-top: 20%;
-  font-size: 5vh;
+  margin-top: 22%;
+  font-size: 7vh;
 }
 

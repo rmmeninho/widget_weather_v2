@@ -2,11 +2,13 @@
 
 <div class="container">
   <div class="temperature_container">
+    <p id="city">{{this.city}}</p>
     <p id="temperature">{{this.temperature}}&#176;</p>
+
   </div>
   <div class="image_container">
-    <p id="city">{{this.city}}</p>
-    <img src="" alt="" id="weather_image">
+    <p id="description_weather">{{this.description}}</p>
+    <img src="" alt="" id="weather_image" [src]="this.image">
   </div>
   <div class="date_container">
     <p id="day">{{this.today | date:'EEEE'}}</p>

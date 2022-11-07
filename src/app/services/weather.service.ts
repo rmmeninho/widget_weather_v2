@@ -32,6 +32,7 @@ export class WeatherService {
   getWeather = (): Observable<any> =>{
     let toret = '../../assets/json/tiempo_vigo.json';
     //let toret = 'https://jsonplaceholder.typicode.com/posts';
+    //let toret = 'https://api.weatherbit.io/v2.0/current?lat='+this.user_location[1]+'&lon='+this.user_location[0]+'&key=74d736b43663479aaa5d840efdd577b9&lang=es';
     console.log(toret);
     return this.http.get(toret);
   }

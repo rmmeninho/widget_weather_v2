@@ -12,6 +12,8 @@ export class WeatherComponent implements OnInit {
   listData: any;
   temperature: any;
   city: string = "";
+  image: any;
+  description: any;
 
   constructor(private weatherService: WeatherService) {
     console.log('El componente se ha creado');
@@ -20,6 +22,9 @@ export class WeatherComponent implements OnInit {
   ngOnInit(): void {
     this.getDate();
     this.QueryManagement();
+    setInterval(() => {
+      this.QueryManagement();
+    }, 3600000);
   }
 
   getDate = (): void =>{
@@ -37,6 +42,8 @@ export class WeatherComponent implements OnInit {
                   this.listData = datos.data[0];
                   this.temperature = this.listData['temp'];
                   this.city = this.listData['city_name'];
+                  this.image = '../../assets/icons/'+this.listData['weather']['icon']+'.png';
+                  this.description = this.listData['weather']['description'];
                 }
               )
       );
